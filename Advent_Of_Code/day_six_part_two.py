@@ -23,17 +23,17 @@ def count_yes_shared(answered: list):
                 num_questions += len(main_list[0])
             else:
                 for letter in main_list[0]:
-                    result = intersect_blyat(letter, main_list[1], index=1, main_list=main_list)
+                    result = intersect_pancake(letter, main_list[1], index=1, main_list=main_list)
                     if result == 1:
                         num_questions += 1
             main_list.clear()
     return num_questions
 
 
-def intersect_blyat(letter: str, list_answers: list, index: int, main_list: list):
+def intersect_pancake(letter: str, list_answers: list, index: int, main_list: list):
     if letter in list_answers:
         if index < len(main_list) - 1:
-            return intersect_blyat(letter, main_list[index + 1], index + 1, main_list)
+            return intersect_pancake(letter, main_list[index + 1], index + 1, main_list)
         elif index == len(main_list) - 1:
             return 1
     elif letter not in list_answers:
