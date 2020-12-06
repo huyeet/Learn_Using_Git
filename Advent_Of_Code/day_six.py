@@ -1,7 +1,7 @@
 from pathlib import Path
 PATH = Path(__file__).parent / "day_six_input.txt"
 # def gonna look into other people's solutions after I'm done with this.
-# Use a set is alright, but I want to look at solutions that do not use that.
+# Using a set is alright, but I want to look at solutions that do not use that.
 
 
 def receive_batch(file_path: Path):
