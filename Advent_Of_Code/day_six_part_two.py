@@ -1,8 +1,10 @@
 from pathlib import Path
+import time
 PATH = Path(__file__).parent / "day_six_input.txt"
 # def gonna look into other people's solutions after I'm done with this.
 # Using a set is alright, but I want to look at solutions that do not use that.
 # Wow the code is atrocious. Why do I even think of using recursion?
+# Learn using set.intersect and redo this part using it.
 
 
 def receive_batch(file_path: Path):
@@ -40,5 +42,7 @@ def intersect_pancake(letter: str, list_answers: list, index: int, main_list: li
         return
 
 
+start_time = time.time()
 questions = receive_batch(PATH)
 print(count_yes_shared(questions))
+print(f"--- {time.time() - start_time} seconds ---")
