@@ -1,8 +1,8 @@
-# I have to learn how to intersect two lists
+# The following things I have to learn by myself:
+# - Interesecting multiple sets
+# - Recursion practice.
+# - Weighted graph data structure.
+# - Algorithms to traverse through the graphs.
+# Of note, you are stupid, but you can learn. Keep in mind of that fact.
 
-test_list = [[1, 2, 3, 4, 5], [6, 7, 8, 9], [10, 2, 3, 4]]
-
-
-def sum_top_bottom(sum_wow, boom: list):
-
-    return sum_wow
+print(int(+23))

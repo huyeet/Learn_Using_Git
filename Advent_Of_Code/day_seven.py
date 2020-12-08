@@ -6,6 +6,8 @@ PATH = Path(__file__).parent / "day_seven_input.txt"
 # Also, definitely look up other people's solutions once you've done with this.
 # yeah, MAKE SURE THAT YOU READ OTHER PEOPLE'S SOLUTIONS
 # I need to learn how to make a weighted graph.
+# Second half failed. I need to practice recursion as well as learn how to create and traverse through
+# a weighted graph... 
 
 
 def receive_batch(file_path: Path):
@@ -95,6 +97,7 @@ def traverse_through_colors(color_value, main_bags: dict, color_name: str, path:
             traverse_through_colors(value_list[i], main_bags, color_children[i], path)
 
 
+# Below are another solutions. Make sure you understand it.
 def count_inner_bags(bags_rules: dict):
     # Solutions from other people... I'm dumb.
     # They make it so elegant.
