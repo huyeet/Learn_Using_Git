@@ -1,6 +1,5 @@
 # You will have to look into other people's solutions after you've done with this.
 # Try to not spend too much time on this as you have a test tomorrow.
-# Part two: Try to run the commands backwards...
 from pathlib import Path
 import time
 import regex
@@ -24,7 +23,6 @@ def total_before_inf(accumulator: int, instructions: list):
         instruction_match = regex.match(PATTERN, instructions[index])
         type = instruction_match.group(1)
         value = int(instruction_match.group(2))
-        #print(f"{index}: {type}: {value} - accumulator before op: {accumulator}")
         if type == "acc":
             accumulator += value
             index += 1
@@ -35,15 +33,12 @@ def total_before_inf(accumulator: int, instructions: list):
             index += value
             instructions_index.append(index)
         flag_list[index] += 1
-        #print(f"Future instruction: {index}: {instructions[index]}")
     return instructions_index
 
 
 def change_command(instructions_index: list, all_instructions: list):
-    # Goal, if backwards encounter infinite loops, change the command!
-    # Second alternative: Detect the one causing infinite loops through running chronologically.
-    # Preferably through checking the first jmp having a 2 value flag, then backpedal it.
-    # Yeah, have  a list of index number, then backpedal the damn thing.
+    # Brute force try to turn every single jump or noc, if repeat, break.
+    # If not, then break once the index reaches the length of the instructions.
     accumulator = 0
     index = 0
     flag_list = [0 for i in range(len(all_instructions))]
