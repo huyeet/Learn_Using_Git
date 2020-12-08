@@ -54,6 +54,7 @@ sorted_id = set(quick_sort(wow))
 all = set(range(min(sorted_id), max(sorted_id)+1))
 only = all - sorted_id
 
+# Set is fooking awesome!
 print(only)
 
 # My solution

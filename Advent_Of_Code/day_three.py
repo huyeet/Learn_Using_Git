@@ -1,6 +1,7 @@
 from pathlib import Path
 import time
 PATH = Path(__file__).parent / "day_three_input.txt"
+# I kinda like day three. let's do a smol animation on this.
 
 
 def receive_batch(file_path: Path):
