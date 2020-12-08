@@ -1,7 +1,8 @@
 # You will have to look into other people's solutions after you've done with this.
 # Try to not spend too much time on this as you have a test tomorrow.
-# Reddit link guide to non-brute force... :
+# Reddit links guide to non-brute force... :
 # https://old.reddit.com/r/adventofcode/comments/k8zdx3/day_8_part_2_without_bruteforce/
+# https://old.reddit.com/r/adventofcode/comments/k8zd1j/2020_day_8_is_there_a_non_brute_force_solution/
 from pathlib import Path
 import time
 import regex
@@ -35,6 +36,7 @@ def total_before_inf(accumulator: int, instructions: list):
             index += value
             instructions_index.append(index)
         flag_list[index] += 1
+    print(f"First part: {accumulator}")
     return instructions_index
 
 
@@ -57,7 +59,6 @@ def change_command(instructions_index: list, all_instructions: list):
                 index += 1
             elif type == "nop":
                 if all_instructions[index] == all_instructions[instruction]:
-                    print(f"{instruction}: {all_instructions[index]}")
                     index += value
                 else:
                     index += 1
@@ -65,7 +66,6 @@ def change_command(instructions_index: list, all_instructions: list):
                 if all_instructions[index] != all_instructions[instruction]:
                     index += value
                 else:
-                    print(f"{instruction}: {all_instructions[index]}")
                     index += 1
             if index < len(all_instructions):
                 flag_list[index] += 1
@@ -86,6 +86,6 @@ start_time = time.time()
 all_instructions = receive_batch(PATH)
 boom = total_before_inf(accumulator, all_instructions)
 change_one_command = change_command(instructions_index=boom, all_instructions=all_instructions)
-print(change_one_command)
+print(f"Second part: {change_one_command}")
 print(f"--- {time.time() - start_time} seconds ---")
 
