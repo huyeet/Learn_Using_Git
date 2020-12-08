@@ -1,13 +1,10 @@
-
-posh beige: shiny gold
-dotted orange: shiny gold
-bright green: shiny gold
-faded violet: shiny gold
-dark olive: shiny gold
-shiny orange: shiny gold
-dark tomato: shiny gold
-
-
+posh beige: ['faded silver', 'dim gold', 'shiny gold']
+dotted orange: ['dotted coral', 'shiny gold', 'wavy coral']
+bright green: ['drab silver', 'shiny gold']
+faded violet: ['shiny gold']
+dark olive: ['wavy red', 'striped lavender', 'vibrant lavender', 'shiny gold']
+shiny orange: ['drab chartreuse', 'shiny gold']
+dark tomato: ['shiny gold', 'clear aqua', 'dotted gold']
 plaid indigo: faded violet
 light cyan: faded violet
 clear plum: dotted orange
@@ -140,11 +137,11 @@ pale indigo: plaid cyan
 drab yellow: dark turquoise
 mirrored red: pale salmon
 posh turquoise: mirrored fuchsia
-mirrored brown: shiny chartreuse
+mirrored brown: dotted crimson
 wavy violet: dotted gray
 muted indigo: mirrored orange
 light plum: wavy cyan
-dark teal: dotted brown
+dark teal: clear salmon
 light lavender: striped violet
 shiny white: mirrored violet
 drab silver: dull teal
@@ -158,8 +155,8 @@ clear indigo: mirrored fuchsia
 mirrored turquoise: faded chartreuse
 dim tan: pale indigo
 striped tomato: drab black
-striped indigo: striped violet
-muted aqua: striped purple
+striped indigo: striped yellow
+muted aqua: vibrant orange
 posh brown: muted beige
 muted plum: muted turquoise
 clear yellow: striped purple
@@ -180,7 +177,7 @@ dull maroon: mirrored fuchsia
 wavy maroon: striped yellow
 shiny aqua: bright maroon
 dotted red: striped tan
-dotted indigo: shiny bronze
+dotted indigo: vibrant orange
 light chartreuse: mirrored violet
 muted blue: dull teal
 light gray: mirrored violet
@@ -215,11 +212,11 @@ striped maroon: muted lime
 faded coral: light chartreuse
 mirrored teal: mirrored turquoise
 plaid red: muted plum
-posh coral: drab silver
+posh coral: dotted red
 shiny lime: drab green
 plaid tan: light chartreuse
 dotted beige: clear tan
-faded teal: light black
+faded teal: vibrant maroon
 light lime: dotted salmon
 vibrant silver: drab tan
 plaid teal: vibrant teal
@@ -228,7 +225,6 @@ wavy teal: striped teal
 light coral: wavy maroon
 bright violet: light gray
 striped fuchsia: shiny white
-bright green: drab silver
 light olive: shiny white
 clear violet: posh turquoise
 plaid olive: shiny white
@@ -237,12 +233,12 @@ dim purple: light black
 dull yellow: faded tan
 vibrant gray: drab aqua
 dim beige: muted lime
-plaid maroon: striped coral
+plaid maroon: shiny white
 dark yellow: striped plum
 light teal: light lavender
 dim olive: clear indigo
 posh lime: wavy violet
-dull silver: striped indigo
+dull silver: wavy violet
 pale violet: light plum
 vibrant chartreuse: mirrored turquoise
 plaid white: vibrant maroon
@@ -260,13 +256,13 @@ dim violet: dull turquoise
 dotted lime: striped fuchsia
 shiny gray: plaid chartreuse
 pale chartreuse: wavy teal
-muted orange: dull yellow
+muted orange: plaid tan
 bright salmon: plaid red
 dull chartreuse: vibrant red
 shiny coral: dark yellow
 pale silver: faded coral
 dim aqua: plaid olive
-wavy beige: dotted beige
+wavy beige: striped fuchsia
 plaid blue: plaid olive
 vibrant lime: pale silver
 posh yellow: dim teal

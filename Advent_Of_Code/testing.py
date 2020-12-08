@@ -1,6 +1,8 @@
 # I have to learn how to intersect two lists
 
-list_test = list(range(1, 11))
-for i in range(0, len(list_test), 2):
-    print(list_test[i])
-    print(i)
+test_list = [[1, 2, 3, 4, 5], [6, 7, 8, 9], [10, 2, 3, 4]]
+
+
+def sum_top_bottom(sum_wow, boom: list):
+
+    return sum_wow
