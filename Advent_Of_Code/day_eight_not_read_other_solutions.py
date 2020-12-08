@@ -1,5 +1,7 @@
 # You will have to look into other people's solutions after you've done with this.
 # Try to not spend too much time on this as you have a test tomorrow.
+# Reddit link guide to non-brute force... :
+# https://old.reddit.com/r/adventofcode/comments/k8zdx3/day_8_part_2_without_bruteforce/
 from pathlib import Path
 import time
 import regex
