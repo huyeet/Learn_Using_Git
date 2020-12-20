@@ -4,5 +4,6 @@
 # - Weighted graph data structure.
 # - Algorithms to traverse through the graphs.
 # Of note, you are stupid, but you can learn. Keep in mind of that fact.
+# Yeah, Delete the inputs...
 
 print(int(+23))
